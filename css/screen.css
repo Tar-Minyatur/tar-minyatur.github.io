@@ -116,6 +116,8 @@ header .mobile-menu {
     
     body header.no-back-button h3 {
         padding-bottom: 0 !important;
+        height: auto !important;
+        overflow: visible !important;
     }
     
     header .mobile-menu {
