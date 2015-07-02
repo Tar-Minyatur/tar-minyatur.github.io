@@ -111,12 +111,26 @@ section {
     background: #ffffff; /* Old browsers */
     background: -moz-linear-gradient(left,  #ffffff 0%, #f8fcff 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(100%,#f8fcff)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  #ffffff 0%,#f8fcff 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  #ffffff 0%,#f8fcff 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  #ffffff 0%,#f8fcff 100%); /* IE10+ */
-    background: linear-gradient(to right,  #ffffff 0%,#f8fcff 100%); /* W3C */
+    background: -webkit-linear-gradient(left,  #ffffff 0%, #f8fcff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #ffffff 0%, #f8fcff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #ffffff 0%, #f8fcff 100%); /* IE10+ */
+    background: linear-gradient(to right,  #ffffff 0%, #f8fcff 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8fcff',GradientType=1 ); /* IE6-9 */
 
+}
+
+section.right {
+    border-right: none;
+    border-left: 2px #e0e0e0 solid;
+    border-top: 2px #e0e0e0 solid;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(left, #f8fcff 0%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f8fcff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #f8fcff 0%, #ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #f8fcff 0%, #ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #f8fcff 0%, #ffffff 100%); /* IE10+ */
+    background: linear-gradient(to right, #f8fcff 0%, #ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8fcff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 }
 
 section p {
@@ -129,13 +143,13 @@ ul {
 }
 
 ul li {
-    margin: 0 0 1em 0.5em;
+    margin: 0 0.5em 1em 0.5em;
     padding: 0;
     text-indent: -1.8em;
     list-style-type: none;
 }
 
-ul li a {
+ul li h4 {
     margin: 0 0 0.1em 0;
     padding: 0 0 0 0.5em;
     color: #58d;
@@ -144,15 +158,25 @@ ul li a {
     line-height: 1.6em;
 }
 
-ul li a:before {
+ul li h4:before {
     content: "→ ";
     color: #909090;
     font-weight: bold;
 }
 
-ul li a:hover {
+ul li h4 a {
+    color: #58d;
+    text-decoration: none;
+}
+
+ul li h4 a:hover {
     color: #505050;
-    border-color: #58d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0.5em;
 }
 
 footer {
