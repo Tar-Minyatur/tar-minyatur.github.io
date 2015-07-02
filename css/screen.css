@@ -20,6 +20,10 @@ body {
     header h3 {
         padding-bottom: 2em !important;
     }
+    
+    body header.no-back-button h3 {
+        padding-bottom: 0 !important;
+    }
 }
 
 header {
